@@ -1,0 +1,33 @@
+.portfolio {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: -50px;
+        left: 46.5%;
+        right: 46.5%;
+        height: 7px;
+        background-color: @color-card-portfolio__before;
+    }
+}
+
+    .portfolio__genre {
+        font-size: 110%;
+        margin: 0 20%;
+        cursor: pointer;
+    }
+
+    .portfolio__screenshots {
+        display: flex;
+        flex-flow: nowrap;
+        height: 359px;
+        left: 0;
+        margin: 50px 0;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .portfolio__switcher {
+        margin: 480px 0 50px;
+    }
