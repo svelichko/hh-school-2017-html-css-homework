@@ -1,0 +1,38 @@
+@import "variables";
+
+.featured-articles {
+    margin-bottom: 100px;
+    position: relative;
+
+    &:after {
+        background: url(../img/next.png) no-repeat;
+        content: '';
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 23px;
+        top: ~"calc(50% - 11px)";
+        right: -5%;
+    }
+}
+
+    .featured-articles__item {
+        background-color: @color-card-featured-articles;
+        height: 100%;
+        padding: 70px 40px 50px;
+
+        &:hover {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 40%;
+                right: 40%;
+                height: 7px;
+                background-color: @color-card-featured-articles_active;
+            }
+        }
+    }
