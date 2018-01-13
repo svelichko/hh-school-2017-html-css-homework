@@ -1,0 +1,126 @@
+@import "variables";
+
+.footer {
+    background: @color-text;
+    color: @color-footer__text;
+    font-size: 14px;
+    padding-top: 70px;
+}
+
+    .footer__border {
+        border-top: 1px solid @color-footer__border;
+        padding-top: 30px;
+    }
+
+    .footer__col {
+        padding-right: 10%;
+    }
+
+    .footer__title {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 1.75rem;
+        text-transform: uppercase;
+    }
+
+    .footer__title_small {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    .footer__form {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .footer__input {
+        background: @color-text;
+        border: 0;
+        border-bottom: 1px solid @color-footer__border;
+        color: @color-footer__text;
+        margin-top: 1rem;
+        width: 48%;
+
+        &::placeholder {
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    .footer__subject {
+        left: 4%;
+        position: relative;
+    }
+
+    .footer__message {
+        width: 100%;
+    }
+
+    .footer__send {
+        background: @color-text;
+        border: 0;
+        color: @color-footer__text;
+        cursor: pointer;
+        margin-top: 100px;
+        padding: 0 10px 0 0;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        z-index: 0;
+
+        &:after {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid @color-footer__text;
+            width: 0;
+            height: 0;
+            bottom: 6px;
+            content: '';
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .footer__link {
+        color: @color-footer__text;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            color: @color-footer__text;
+        }
+    }
+
+    .footer__copyright {
+        margin: 0;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+    .footer__nav-list {
+        list-style-type: none;
+        position: relative;
+        right: 0;
+    }
+
+    .footer__nav-item {
+        display: inline-block;
+        padding: 0 10px;
+
+        &:last-child {
+            margin-right: -10px;
+        }
+    }
+
+    .footer__end {
+        margin-bottom: 30px;
+    }
